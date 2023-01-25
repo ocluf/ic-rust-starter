@@ -1,0 +1,6 @@
+type Todo = record { "text" : text };
+
+service : { 
+    create_note : (text) -> (); 
+    get_note : (nat32) -> (opt Todo) query 
+}
